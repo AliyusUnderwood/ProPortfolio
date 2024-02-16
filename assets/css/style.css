@@ -1,0 +1,109 @@
+
+* {
+    box-sizing: border-box;
+}
+
+:root{
+    --prime: #E4E4DE;
+    --sec: #C4C5BA;
+    --tert: #595f39;
+    --dark: #1b1b1b;   
+}
+
+body {
+    background-color:var(--prime);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+header {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1%;
+    background-color:var(--dark);
+    color: var(--prime);
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    min-width: 300px;
+    list-style-type: none;
+}
+
+nav a {
+    color: var(--sec);
+    padding: 2px 6px;
+    margin-right: 7px;
+    background-image: linear-gradient(270deg, var(--tert)0%, var(--tert)100%);
+    background-repeat: no-repeat;
+    text-decoration: none;
+    background-size: 100% 0.2em;
+    background-position: bottom;
+    transition: all 0.25s ease-in;
+    font-size: 22px;
+
+}
+
+nav a:hover {
+    background-size: 100% 100%;
+    color: var(--prime);
+}
+
+
+main {
+    margin-top: 20px;
+    margin-bottom: 45px;
+  }
+
+.banner {
+    background:var(--tert);
+    background-image: url("../images/Untitled-2.jpg"), linear-gradient(180deg, var(--sec) 0%, var(--prime) 100%);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: soft-light;
+    min-height: 30vh;
+    color: var(--prime);
+    padding: 2% 6%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    text-align: right;
+}
+
+.h2 {
+    font-size: 75px;
+}
+
+.page-wrap {
+    max-width: 88%;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.section {
+    margin: 25px 0;
+    padding: 10px 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+    justify-content: space-between;
+}
+
+.section > h2 {
+    flex: 0 0 20%;
+    text-align: right;
+    padding-right: 15px;
+    border-right: 4px solid var(--primary);
+    font-size: 50px;
+    line-height: 1.1;
+}
